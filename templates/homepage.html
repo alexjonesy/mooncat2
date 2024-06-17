@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mooncat</title>
+    <link rel="stylesheet" href="./static/styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="container">
+            <header>
+                <h1>Mooncat</h1>
+                <nav>
+                    <a href="https://dexscreener.com/" target="_blank">Dexscreener</a>
+                    <a href="#" class="purchase">Purchase</a>
+                </nav>
+            </header>
+
+            <section class="main-content">
+                <div class="coin-info">
+                    <h2>$mooncat</h2>
+                    <img src="./mooncatv2.jpg" alt="Mooncat Coin Image" class="responsive-image">
+                    <p>Empowering the Future of Digital Currency.</p>
+                    <p>Mooncat: Prepare for lift-off with this feline astronaut, ready to take you to the moon. Combining the curiosity of a cat with the vast potential of space exploration, Mooncat offers a whimsical journey through the cosmos of the crypto universe. Join the Mooncat community and embark on an adventure that's out of this world, where even the laziest cat can reach the stars. Mooncat: where the final frontier meets feline charm.
+<br>
+<br>
+                        Disclaimer: Not financial advice. Consult your cat before making any decisions.</p>
+                    <button class="purchase" onclick="copyWalletAddress()">Copy Contract Address</button>
+                    <input type="text" value="DezXAZ8z7PnnrRjJz3WxB0RgiCaXnBj87YaB1pP8263" id="walletAddress" readonly hidden>
+                </div>
+                <div class="important-info">
+                    <div class="info-item">
+                        <span class="info-icon">🔥</span>
+                        <p>LP Burned</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">✅</span>
+                        <p>Freeze Authority Disabled</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💼</span>
+                        <p>Dev Holds Less Than 5%</p>
+                    </div>
+                </div>
+        </section>
+
+            <section class="socials">
+                <h3>Join Our Community</h3>
+                <a href="#">Telegram</a>
+                <a href="#">Twitter</a>
+            </section>
+
+            
+        </div>
+    </div>
+
+    <script>
+        function copyWalletAddress() {
+            var copyText = document.getElementById("walletAddress");
+            copyText.hidden = false; // Temporarily show the input field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand("copy");
+            copyText.hidden = true; // Hide the input field again
+            alert("Wallet address copied: " + copyText.value);
+        }
+    </script>
+</body>
+</html>
