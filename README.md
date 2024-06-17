@@ -1,0 +1,1 @@
+Basic static web app
